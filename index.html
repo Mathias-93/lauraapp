@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" type="module" defer></script>
+    <link rel="icon" href="data:," />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main-div">
+      <div id="functions-div" class="functions-div">
+        <h2 id="clock" class="clock hidden"></h2>
+        <audio id="gong" src="gong.mp3" preload="auto"></audio>
+        <audio id="zengong" src="zengong.mp3" preload="auto"></audio>
+        <select id="time-selector" class="time-selector">
+          <option value="">Pick a time interval</option>
+          <option value="60">1</option>
+          <option value="90">1.5</option>
+          <option value="120">2</option>
+          <option value="150">2.5</option>
+          <option value="180">3</option>
+          <option value="210">3.5</option>
+          <option value="240">4</option>
+          <option value="270">4.5</option>
+          <option value="300">5</option>
+          <option value="330">5.5</option>
+          <option value="360">6</option>
+        </select>
+        <input
+          id="input"
+          class="input"
+          type="number"
+          placeholder="enter total time in minutes"
+          required
+        />
+        <button id="go-button">Click here to start</button>
+        <button id="refresh" class="hidden">Go againe</button>
+      </div>
+    </div>
+  </body>
+</html>
